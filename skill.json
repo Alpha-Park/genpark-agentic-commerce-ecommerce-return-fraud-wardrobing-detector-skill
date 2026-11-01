@@ -1,0 +1,28 @@
+{
+  "name": "genpark-agentic-commerce-ecommerce-return-fraud-wardrobing-detector-skill",
+  "version": "1.0.0",
+  "description": "Omnichannel return fraud detection: wardrobing, receipt reuse, bracket ordering & return merchant chargeback preventer.",
+  "category": "agentic_commerce",
+  "author": "GenPark AI",
+  "website": "https://www.genpark.ai",
+  "linkedin": "https://www.linkedin.com/company/92955550",
+  "main": "skills.py",
+  "tools": [
+    {
+      "name": "detect_return_fraud_and_wardrobing",
+      "description": "Omnichannel return fraud detection: wardrobing, receipt reuse, bracket ordering & return merchant chargeback preventer.",
+      "sample_input": {
+        "customer_history": {
+          "total_orders": 12,
+          "total_returns": 9
+        },
+        "current_return_request": {
+          "category": "FORMAL_DRESS",
+          "item_price_usd": 680.0,
+          "days_since_delivery": 28,
+          "is_bracketed_order": false
+        }
+      }
+    }
+  ]
+}
